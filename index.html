@@ -1,0 +1,519 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Astronomy</title>
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script src="js/mobile.js" type="text/javascript"></script>	
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li class="selected">
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About us</a>
+					</li>
+					<li class="menu">
+						<a href="categories.html">Categories</a>
+						<ul class="primary">
+							<li>
+								<a href="bigbang.html">Big bang theory</a>
+							</li>
+							<li>
+								<a href="earthevo.html">Evolution of Earth</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="observatories.html">Observatories</a>
+						<ul class="secondary">
+							<li>
+								<a href="observatory1.html">PARANAL OBSERVATORY</a>
+							</li>
+							<li>
+								<a href="observatory2.html">YERKES OBSERVATORY</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body" class="home">
+			<div class="header">
+				<div>
+					<img src="images/solar-system.jpg" alt="" class="solarsystem" usemap="#solarMap">
+					<map name="solarMap" id="Map">
+						<area shape="circle" coords="472,242,26" alt="Sun" href="https://en.wikipedia.org/wiki/Sun" title="Sun">
+						<area shape="circle" coords="405,259,9" alt="Mercury" href="https://en.wikipedia.org/wiki/Mercury" title="Mercury">
+						<area shape="circle" coords="592,215,18" alt="Venus" href="https://en.wikipedia.org/wiki/Venus" title="Venus">
+						<area shape="circle" coords="444,354,28" alt="Earth" href="https://en.wikipedia.org/wiki/Earth" title="Earth">
+						<area shape="circle" coords="262,267,15" alt="Mars" href="https://en.wikipedia.org/wiki/Mars" title="Mars">
+						<area shape="circle" coords="136,524,93" alt="Jupiter" href="https://en.wikipedia.org/wiki/Jupiter" title="Jupiter">
+						<area shape="circle" coords="844,79,38" alt="Saturn" href="https://en.wikipedia.org/wiki/Saturn" title="Saturn">
+						<area shape="circle" coords="107,228,29" alt="Uranus" href="https://en.wikipedia.org/wiki/Uranus" title="Uranus">
+						<area shape="circle" coords="280,113,19" alt="Neptune" href="https://en.wikipedia.org/wiki/Neptune" title="Neptune">
+						<area shape="circle" coords="117,51,7" alt="Pluto" href="https://en.wikipedia.org/wiki/Pluto" title="Pluto">
+					</map>
+				</div>
+			</div>
+			<div class="body">
+				<div>
+                    <div class="tab">
+                        <button class="tablinks" onclick="clickHandle(event, 'sun')">Sun</button>
+                        <button class="tablinks" onclick="clickHandle(event, 'mercury')">Mercury</button>
+                        <button class="tablinks" onclick="clickHandle(event, 'venus')">Venus</button>
+                        <button class="tablinks" onclick="clickHandle(event, 'earth')">Earth</button>
+                        <button class="tablinks" onclick="clickHandle(event, 'mars')">Mars</button>
+                        <button class="tablinks" onclick="clickHandle(event, 'jupiter')">Jupiter</button>
+                        <button class="tablinks" onclick="clickHandle(event, 'saturn')">Saturn</button>
+                        <button class="tablinks" onclick="clickHandle(event, 'uranus')">Uranus</button>
+                        <button class="tablinks" onclick="clickHandle(event, 'neptune')">Neptune</button>
+                        <button class="tablinks" onclick="clickHandle(event, 'pluto')">Pluto</button>
+                    </div>
+
+                    <div id="sun" class="tabcontent" >
+                        <img src="images/sun.png" alt="">
+                        <table>
+                            <tr>
+                                <td>Mean distance from Earth&emsp;&emsp;</td>
+                                <td>1 AU ≈ 1.496×10<sup>8</sup>  km </td>
+                            </tr>
+                            <tr>
+                                <td> Size (radius)</td>
+                                <td> 696.340 km </td>
+                            </tr>
+                            <tr>
+                                <td>Atmosphere</td>
+                                <td>Superheated (around 6,000°C at photosphere) </td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>1.9885×10<sup>30</sup>  kg</td>
+                            </tr>
+                            <tr>
+                                <td>Angular size</td>
+                                <td>31.6–32.7 minutes of arc</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="mercury" class="tabcontent">
+                        <img src="images/mercury.png" alt="">
+                        <table>
+                            <tr>
+                                <td>Mean distance from Earth&emsp;&emsp;</td>
+                                <td>	0.61 AU ≈ 0.91×10<sup>8</sup> km </td>
+                            </tr>
+                            <tr>
+                                <td> Size (radius)</td>
+                                <td> 2.440 km </td>
+							</tr>
+                            <tr>
+                                <td>Atmosphere</td>
+                                <td>Extremely thin and non-protective atmosphere</td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>3.3011×10<sup>23</sup> kg</td>
+                            </tr>
+                            <tr>
+                                <td>Surface pressure</td>
+                                <td>trace (≲ 0.5 nPa)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="venus" class="tabcontent">
+                        <img src="images/venus.png" alt="">
+                        <table>
+                            <tr>
+                                <td>Mean distance from Earth&emsp;&emsp;</td>
+                                <td> 0.28 AU ≈ 0.41×10<sup>8</sup> km </td>
+                            </tr>
+                            <tr>
+                                <td> Size (radius)</td>
+                                <td> 2,439.7±1.0 km </td>
+                            </tr>
+                            <tr>
+                                <td>Atmosphere</td>
+                                <td>Thick, toxic atmosphere filled with carbon dioxide</td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>	
+									4.8675×10<sup>24</sup> kg</td>
+                            </tr>
+                            <tr>
+                                <td>Surface pressure</td>
+                                <td>93 bar (9.3 MPa)</td>
+                            </tr>
+                        </table>
+                    </div>
+					<div id="earth" class="tabcontent">
+                        <img src="images/earth.png" alt="">
+                        <table>
+                            <tr>
+                                <td>Mean distance from Sun&emsp;&emsp;</td>
+                                <td>1 AU ≈ 1.496×10<sup>8</sup>  km </td>
+                            </tr>
+                            <tr>
+                                <td> Size (radius)</td>
+                                <td> 6,371 km </td>
+                            </tr>
+                            <tr>
+                                <td>Atmosphere</td>
+                                <td>Composed of 78% nitrogen, 21% oxygen, 0.9% argon, and 0.1% other gases</td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>5.97237×10<sup>24</sup> kg</td>
+                            </tr>
+                            <tr>
+                                <td>Surface pressure</td>
+                                <td>101,325 kPa (at MSL)</td>
+                            </tr>
+                        </table>
+                    </div>
+					<div id="mars" class="tabcontent">
+                        <img src="images/mars.png" alt="">
+                        <table>
+                            <tr>
+                                <td>Mean distance from Earth&emsp;&emsp;</td>
+                                <td>0.52 AU ≈ 0.78×10<sup>8</sup>  km </td>
+                            </tr>
+                            <tr>
+                                <td> Size (radius)</td>
+                                <td> 3,390 km </td>
+                            </tr>
+                            <tr>
+                                <td>Atmosphere</td>
+                                <td>Composed of 95.32% carbon dioxide, 2.7% nitrogen, 1.6% argon and <br> 0.13% oxygen</td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>6.4171×10<sup>23</sup> kg</td>
+                            </tr>
+                            <tr>
+                                <td>Surface pressure</td>
+                                <td>0.636 (0.4–0.87) kPa </td>
+                            </tr>
+                        </table>
+                    </div>
+					<div id="jupiter" class="tabcontent">
+                        <img src="images/jupiter.png" alt="">
+                        <table>
+                            <tr>
+                                <td>Mean distance from Earth&emsp;&emsp;</td>
+                                <td>4.2 AU ≈ 6.28×10<sup>8</sup>  km </td>
+                            </tr>
+                            <tr>
+                                <td> Size (radius)</td>
+                                <td> 69,911 km </td>
+                            </tr>
+                            <tr>
+                                <td>Atmosphere</td>
+                                <td>Composed of a mixture of hydrogen, helium and much smaller amounts <br> of methane and ammonia</td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>1.8982×10<sup>27</sup> kg</td>
+                            </tr>
+                            <tr>
+                                <td>Surface pressure</td>
+                                <td>200–600 kPa (opaque cloud deck)</td>
+                            </tr>
+                        </table>
+                    </div>
+					<div id="saturn" class="tabcontent">
+                        <img src="images/saturn.png" alt="">
+                        <table>
+                            <tr>
+                                <td>Mean distance from Earth&emsp;&emsp;</td>
+                                <td>8.52 AU ≈ 1.28×10<sup>9</sup>  km </td>
+                            </tr>
+                            <tr>
+                                <td> Size (radius)</td>
+                                <td> 58,232 km </td>
+                            </tr>
+                            <tr>
+                                <td>Atmosphere</td>
+                                <td>Saturn's atmosphere is much like that of Jupiter's</td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>5.6834×10<sup>26</sup> kg</td>
+                            </tr>
+                            <tr>
+                                <td>Surface pressure</td>
+                                <td>140 kPa</td>
+                            </tr>
+                        </table>
+                    </div>
+					<div id="uranus" class="tabcontent">
+                        <img src="images/uranus.png" alt="">
+                        <table>
+                            <tr>
+                                <td>Mean distance from Earth&emsp;&emsp;</td>
+                                <td>18.21 AU ≈ 2.724×10<sup>9</sup>  km </td>
+                            </tr>
+                            <tr>
+                                <td> Size (radius)</td>
+                                <td> 25,362 km </td>
+                            </tr>
+                            <tr>
+                                <td>Atmosphere</td>
+                                <td>Composed of mostly hydrogen, followed by helium and a little methane</td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>(8.6810±0.0013)×10<sup>25</sup> kg</td>
+                            </tr>
+                            <tr>
+                                <td>Surface pressure</td>
+                                <td>>>1000 bars</td>
+                            </tr>
+                        </table>
+                    </div>
+					<div id="neptune" class="tabcontent">
+                        <img src="images/neptune.png" alt="">
+                        <table>
+                            <tr>
+                                <td>Mean distance from Earth&emsp;&emsp;</td>
+                                <td>29.09 AU ≈ 4.351×10<sup>9</sup>  km </td>
+                            </tr>
+                            <tr>
+                                <td> Size (radius)</td>
+                                <td> 24,622 km </td>
+                            </tr>
+                            <tr>
+                                <td>Atmosphere</td>
+                                <td>Composed of mostly hydrogen, with smaller amounts of helium and methane</td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>1.02413×10<sup>26</sup> kg</td>
+                            </tr>
+                            <tr>
+                                <td>Surface pressure</td>
+                                <td>>>1000 bars</td>
+                            </tr>
+                        </table>
+                    </div>
+					<div id="pluto" class="tabcontent">
+                        <img src="images/pluto.png" alt="">
+                        <table>
+                            <tr>
+                                <td>Mean distance from Sun&emsp;&emsp;</td>
+                                <td>29.658 AU ≈ 4.43682×10<sup>9</sup>  km </td>
+                            </tr>
+                            <tr>
+                                <td> Size (radius)</td>
+                                <td>1,188.3±0.8 km</td>
+                            </tr>
+                            <tr>
+                                <td>Atmosphere</td>
+                                <td>Pluto has a thin, tenuous atmosphere that expands when it comes <br> closer to the Sun and collapses as it moves farther away</td>
+                            </tr>
+                            <tr>
+                                <td>Mass</td>
+                                <td>(1.303±0.003)×10<sup>22</sup> kg</td>
+                            </tr>
+                            <tr>
+                                <td>Surface pressure</td>
+                                <td>1.0 Pa (2015)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+				<div class="carousel-container">
+					<a class="slick-arrow slick-prev">
+					<i class="fas fa-angle-left"></i>
+					</a>
+					<div class="slick-list">
+						<div class="slick-track">
+							<div id="lastClone" class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Earth" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/earth.png" alt="">
+									</a>
+								</div>
+							</div>
+					
+							<div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Sun" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/sun.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Mercury" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/mercury.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Venus" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/venus.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Earth" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/earth.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Mars" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/mars.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Jupiter" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/jupiter.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Saturn" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/saturn.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="" aria-label="https://en.wikipedia.org/wiki/Uranus" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/uranus.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Neptune" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/neptune.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Pluto" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/pluto.png" alt="">
+									</a>
+								</div>
+							</div>
+					
+							<div id="firstClone" class="slick-slide slick-cloned" data-index="1" tabindex="-1" aria-hidden="true" style="width: 584px;">
+								<div>
+									<a href="https://en.wikipedia.org/wiki/Earth" aria-label="" tabindex="-1" style="width: 100%; display: inline-block">
+									<img class="image" src="images/earth.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="slick-arrow slick-next">
+					<i class="fas fa-angle-right"></i>
+					</a>
+					<ul class="slick-dots">
+						<li class="slick-active">
+							<button>1</button>
+						</li>
+						<li class="">
+							<button>2</button>
+						</li>
+						<li class="">
+							<button>3</button>
+						</li>
+						<li class="">
+							<button>4</button>
+						</li>
+						<li class="">
+							<button>5</button>
+						</li>
+						<li class="">
+							<button>6</button>
+						</li>
+						<li class="">
+							<button>7</button>
+						</li>
+						<li class="">
+							<button>8</button>
+						</li>
+						<li class="">
+							<button>9</button>
+						</li>
+						<li class="">
+							<button>10</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer">
+				<div>
+					<ul>
+						<li>
+							<h1>FEATURED VIDEO</h1>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/libKVRa01L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</li>
+						<li>
+							<h1>Categories</h1>
+							<ul>
+								<li>
+									<a href="bigbang.html"><img src="images/big-bang-theory.jpg" alt=""></a>
+									<h1>BIG BANG THEORY</h1>
+									<span>The existence of the observable universe from the earliest known periods through its subsequent large-scale evolution</span>
+									<a href="bigbang.html" class="more">Read More</a>
+								</li>
+								<li>
+									<a href="earthevo.html"><img src="images/evolution-of-earth.jpg" alt=""></a>
+									<h1>EVOLUTION OF EARTH</h1>
+									<span>Chemical reactions led to the first self-replicating molecules about four billion years ago.</span>
+									<a href="earthevo.html" class="more">Read More</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="connect">
+				<div>
+					<h1>CONTACT US ON</h1>
+					<div>
+						<a href="https://www.facebook.com/trannamtrung063/" class="facebook"></a>
+						<h2>Tran Nam Trung</h2> <br>
+						<a href="https://www.facebook.com/profile.php?id=100049165150084" class="facebook"></a>
+						<h2>Tran Hai Phong</h2>
+					</div>
+				</div>
+			</div>
+			<div class="footnote">
+				<div>
+					<p>Copyright &copy; by <strong>T1.2111.M1</strong> </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
